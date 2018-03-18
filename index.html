@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bookshelf</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1>Bookshelf</h1>
+        </div>
+        <div id="addForm">
+            <h2>Add/Edit</h2>
+            <form>
+                <div>
+                    <label for="formBookTitle">Title</label>
+                    <input type="text" name="bookTitle" id="formBookTitle">
+                </div>
+                <div>
+                    <label for="formBookGenre">Genre</label>
+                    <select name="bookGenre" id="formBookGenre">
+                        <option disabled selected>--Pick a genre--</option>
+                        <option value="1">Esimene zanr</option>
+                        <option value="2">Teine zanr</option>
+                        <option value="3">Kolmas zanr</option>
+                        <option value="4">Neljas zanr</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="formBookDesc">Description</label>
+                    <textarea name="bookDesc" id="formBookDesc" cols="30" rows="10"></textarea>
+                </div>
+                <input id="formBookSubmit" type="submit" value="Add">
+            </form>
+        </div>
+        <div id="bookList">
+            <h2>List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Title</th>
+                        <th>Genre</th>
+                        <th>Description</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>My title</td>
+                        <td>Drama</td>
+                        <td>Little book about my life</td>
+                        <td>
+                            <button>Edit</button>
+                            <button>Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>My title</td>
+                        <td>Drama</td>
+                        <td>Little book about my life</td>
+                        <td>
+                            <button>Edit</button>
+                            <button>Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>My title</td>
+                        <td>Drama</td>
+                        <td>Little book about my life</td>
+                        <td>
+                            <button>Edit</button>
+                            <button>Delete</button>
+                        </td>
+                    </tr>    
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
