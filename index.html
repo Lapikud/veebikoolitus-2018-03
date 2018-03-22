@@ -12,7 +12,7 @@
         </div>
         <div id="addForm">
             <h2>Add/Edit</h2>
-            <form>
+            <form id="formEl">
                 <div>
                     <label for="formBookTitle">Title</label>
                     <input type="text" name="bookTitle" id="formBookTitle">
@@ -46,40 +46,12 @@
                         <th></th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>My title</td>
-                        <td>Drama</td>
-                        <td>Little book about my life</td>
-                        <td>
-                            <button>Edit</button>
-                            <button>Delete</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>My title</td>
-                        <td>Drama</td>
-                        <td>Little book about my life</td>
-                        <td>
-                            <button>Edit</button>
-                            <button>Delete</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>My title</td>
-                        <td>Drama</td>
-                        <td>Little book about my life</td>
-                        <td>
-                            <button>Edit</button>
-                            <button>Delete</button>
-                        </td>
-                    </tr>    
+                <tbody id="bookListBody">
+
                 </tbody>
             </table>
         </div>
     </div>
+    <script src="app.js"></script>
 </body>
 </html>
